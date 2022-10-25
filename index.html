@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <!-- <meta http-equiv="refresh" content="1" > --> <!--To refresh the website every 1 seconds-->
+    <meta charset="UTF-8">
+    <title>TU MASCOTA</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav> <!--nav: Contenedor de enlaces de navegación. PermiteDirigirseAOtrasSeccionesOAEnlacesExternos.ÚtilEnLaOrganizaciónDeContenidoDeLaPágina.-->
+        <ul class="menu">    <!-- ul de "unordered list" -lista no ordenada . crea una lista no ordenada.-->
+         <li><a href="#">Inicio</a></li> <!--li del ingles item list o elemento de lista declara cada uno de los elementos de una lista.-->
+         <!--Anchor <a> crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.-->
+         <li><a href="#productosLink">Productos</a></li> 
+         <li><a href="#serviciosLink">Servicios</a></li>
+         <li><a href="#trabajeConNosotrosLink">Trabaje con nosotros</a></li>
+         <li><a href="#contactoLink">Contacto</a></li>      
+        </ul> 
+     </nav>  <!--class: The class attribute is mostly used to point to a class in a style sheet. However, it can also be used by a JavaScript (via the HTML DOM) to make changes to HTML elements with a specified class. -->
+     <div class="gris"> <!--div: DefinesADivisionOrASectionInAnHTMLDocument.Is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.-->
+        <h1>TU MASCOTA</h1>
+        <h2>Todo lo que necesitas para tu mascota</h2>
+     </div>
+     <div class="fondoMascota">
+     </div>
+     <div class="pagoSeguro">
+    </div>
+    <!-- here we add the products-->
+    <div class ="subtitulo"><span id="productosLink">PRODUCTOS</span></div>
+    <div class="wrap">         
+        <div class="box">             
+            <img src ="../ProyectoFinalTiendaMascota/img/product1.jpg">            
+            <div class="text">
+                <h3>Pet Prime</h3>
+                <h2>Puppy balance X 60 Tabs.</h2>
+                <p> $84.000</p>
+                <button class="buy-1">Comprar ahora</button>
+            </div>            
+        </div>
+        <div class="box">             
+            <img src ="../ProyectoFinalTiendaMascota/img/product2.jpg">            
+            <div class="text">
+                <h3>Nupec</h3>
+                <h2>Nupec Raza pequeña.</h2>
+                <p> $120.000</p>
+                <button class="buy-1">Comprar ahora</button>
+            </div>            
+        </div>
+        <div class="box">             
+            <img src ="../ProyectoFinalTiendaMascota/img/product3.jpg">            
+            <div class="text">
+                <h3>Natural Freshly</h3>
+                <h2>Escencia Floral Bon</h2>
+                <p> $18.000</p>
+                <button class="buy-1">Comprar ahora</button>
+            </div>            
+        </div>    
+        <div class="box">             
+            <img src ="../ProyectoFinalTiendaMascota/img/product4.jpg">            
+            <div class="text">
+                <h3>Pet Prime</h3>
+                <h2>Clindamind x20 Tab</h2>
+                <p> $40.000</p>
+                <button class="buy-1">Comprar ahora</button>
+            </div>            
+        </div>     
+        <div class="box">             
+            <img src ="../ProyectoFinalTiendaMascota/img/product5.jpg">            
+            <div class="text">
+                <h3>Pet Prime</h3>
+                <h2>huellitas cream.</h2>
+                <p> $15.000</p>
+                <button class="buy-1">Comprar ahora</button>
+            </div>            
+        </div>    
+        <div class="box">             
+            <img src ="../ProyectoFinalTiendaMascota/img/product6.jpg">            
+            <div class="text">
+                <h3>Pet Prime</h3>
+                <h2>Orejitas Clean</h2>
+                <p> $22.000</p>
+                <button class="buy-1">Comprar ahora</button>
+            </div>            
+        </div>  
+    </div>
+    <!-- here we add the Services-->
+    <div class ="subtitulo"><span id="serviciosLink">SERVICIOS</span></div>
+     <div class="dos_col">
+        <div class="col_left col">
+            <h2>MICROCHIP DE IDENTIFICACIÓN</h2>
+            <ul>    
+                <li><a href="#">Tiene una vida útil de 25 años</a></li>
+                <li><a href="#">Legalizas la identidad de tu mascota</a></li>
+                <li><a href="#">Hoja de vida electrónica de tu mascota</a></li>
+                <li><a href="#">Tu mascota puede salir del país</a></li>
+                <li><a href="#">Te certifica como amo responsable</a></li>
+                <li><a href="#">No genera trauma ni dolor</a></li>                
+            </ul>           
+        </div>
+        <div class="col_right col">
+            <!-- <h2>Bura bura</h2> -->
+            <img src ="../ProyectoFinalTiendaMascota/img/chipIdentidad.JPG">                     
+        </div>
+     </div>
+     <!-- Here we add the Work with us-->
+     <div class="workWithUs">
+        <form action="">
+            <h2 id="trabajeConNosotrosLink">TRABAJE CON NOSOTROS</h2>
+            <input type="text" name="Nombre" placeholder="Nombre">
+            <input type="text" name="Correo" placeholder="Correo">
+            <input type="text" name="telefono" placeholder="Teléfono">
+            <textarea type="text" name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+            <input type="button" value="ENVIAR" id="boton">
+        </form>
+    </div>
+
+     <!-- Here we add the Contact Information-->
+     <div class="tres_col_wrapper">
+        <div class="tres_col">
+            <div class="col_left col">
+                <h3 id="contactoLink">DATOS DE CONTACTO</h3>
+                <ul>    
+                    <li>Ubicación: </li>
+                    <p>Medellín</p>
+                    <li>Teléfono: </li>
+                    <p>316 556899</p>
+                    <li>E-mail: </li>
+                    <p>tumascota@tumascota.com</p>                   
+                </ul>
+            </div>
+            <div class="col_cen col">
+                <h3>MAS SOBRE NOSOTROS</h3>                    
+                <ul>    
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Ubicación</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>                    
+                </ul>
+            </div>
+            <div class="col_right col">
+                <h3>CATEGORÍAS</h3>
+                <ul>    
+                    <li><a href="#">Farmacia veterinaria</a></li>
+                    <li><a href="#">Higiene oral</a></li>
+                    <li><a href="#">Homeopáticos</a></li>
+                    <li><a href="#">Antipulgas</a></li>
+                    <li><a href="#">Suplementos y vitaminas</a></li>
+                    <li><a href="#">Belleza e higiene</a></li>                    
+                </ul>
+            </div>        
+        </div>
+    </div>
+     <div class="footer">
+        <p>Copyrights Todos los derechos reservados Tu Mascota Colombia</p>
+
+     </div>
+
+</body>
+</html>
+

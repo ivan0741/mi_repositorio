@@ -1,0 +1,253 @@
+@font-face {
+    font-family: miTipo;
+    src: url(../css/HussarBoldWeb-bf92.woff);
+}
+body{
+    margin: 0;
+    font-family: miTipo;
+}
+nav{
+background-color:rgb(7, 181, 36);
+/*background-color:rgb(255, 136, 0);*/
+}
+.menu{
+    margin: 0;
+    text-align: center;
+}
+.menu li{    
+    display: inline-block;  /*Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
+    Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.*/
+}
+.menu a{
+    padding: 20px ; /*Padding is used to create space around an element's content, inside of any defined borders.*/ 
+    font-size: 130%   ;
+    color: white;
+    text-decoration: none; /*TextDecoration: usedForDecoratingTheTextInDifferentWays.ItCanBeUsedForUnderline, overline, line-through, underline overline values to decorate the text in different ways.*/
+    display: block; /*The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, 
+    such as flow layout, grid or flex.    The element generates a block element box, generating line breaks both before and after the element when in the normal flow.*/
+}
+/*The :hover CSS pseudo-class matches when the user interacts with an element with a pointing device, but does not necessarily activate it.
+ It is generally triggered when the user hovers over an element with the cursor (mouse pointer).*/
+.menu a:hover{
+    /*background-color: rgb(232, 182, 102);*/
+    background-color:rgb(54, 219, 81);
+} 
+.gris{
+    background-color:rgb(61, 81, 85);
+    overflow: hidden; /*The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
+    hidden - The overflow is clipped, and the rest of the content will be invisible*/
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.fondoMascota{    
+    border:10px solid rgb(239,189,8);
+    /*height: 500px;*/
+    height: 380px;    
+    background: url(../img/mascotas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;    
+    /*background-size: cover;*/
+}
+.pagoSeguro{    
+    /*border:2px solid rgb(239,189,8);*/
+    /*height: 500px;*/
+    height: 180px;    
+    background: url(../img/PagosSeguros.jpg);
+    background-size: 900px;
+    background-repeat: no-repeat;
+    background-position: center;    
+    /*background-size: cover;*/
+}
+.dos_col{
+    width: 800px;
+    height: 450px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    /*border: solid 5px #16a836;*/
+    border-radius: 20px;
+    /*padding-top: 10px;*/
+    /*float: left;
+    box-sizing: border-box;*/
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 5) ;    
+}
+.dos_col img{
+    /*width: 1024px;*/
+    height: 450px;   
+    border-radius: 20px;  
+}
+.dos_col .col_left{
+    width: 49%;
+    vertical-align: top;
+    text-align: left;
+    font-size: 15px;
+    /*background-color: #16a836;    */
+    /*margin-left: 30px;*/
+    padding-left:85px;
+    box-sizing: border-box; /*Command to avoid adding the value of the paddind-left (added in the upper row) into the dos_col general block */
+}
+.dos_col .col_right{
+    text-align: right;
+    /*background-color: #3d16a8;*/
+    width: 50%;
+    vertical-align: top;
+    /*padding-left: 100px;*/
+    box-sizing: border-box; /*Command to avoid adding the value of the paddind-left (added in the upper row) into the dos_col general block */
+}
+.dos_col .col_left ul{ /*it refers to the elements of the unordered list*/
+    padding: 10px;
+}
+.dos_col .col_left a{  /*Se apunta a los enlaces que hay dentro de la columna derecha*/
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.dos_col .col_left a:hover{  /*It refers to the links, and what happens to them when the mouse cursor moves over them */
+    text-decoration: none;
+}
+.dos_col .col_left li{  /*Se apunta a cada elemento de lista*/
+    /*list-style: none; /*To remove the bullet points */   
+    margin-bottom: 20px;
+}
+.tres_col_wrapper{
+    background-color: rgb(30, 28, 26);
+    font-size: 15px;
+}
+.tres_col{    
+    color: white;
+    width: 1024px;
+    margin: auto;
+    /*border: 2px solid red;*/
+    text-align: center;
+}
+.tres_col li{   
+    margin: 20px 0px;
+}
+.tres_col a{
+    color: white;
+    text-decoration: none;
+}
+.col{
+    display: inline-block;
+}
+.tres_col .col{
+    width: 330px;
+    vertical-align: top;
+    /*border: 2px solid rebeccapurple;*/
+    text-align: left;
+}
+.footer{    
+    /*background-color:rgb(7, 181, 36);*/
+    background-color: #16a836;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+/*Estilos para los productos */
+.wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 140px;              /*to separate the columns horizontally */
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 50px; 
+   /* border:5px solid rgb(12, 91, 42);*/
+}
+.wrap .box{
+    /*border:5px solid rgb(239,189,8); */
+    /*background: rgb(236, 232, 216);*/
+    /*background-color: rgb(61, 81, 85);*/
+    border-radius: 20px;
+    text-align: center;
+    /*padding-top: 10px;*/
+    /*float: left;
+    box-sizing: border-box;*/
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 5) ;
+    cursor: pointer;    
+    /*background-color: rgb(61, 81, 85);*/
+}
+.box h3{
+    margin: 1%;  
+    color: rgb(179, 179, 179);  
+}
+.box h2{
+    margin: 4% 0%;   
+}
+.box p{
+    color: red;
+    margin: 2%;
+}
+
+.box img{        
+    width:100%;
+    height: 200px;    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+button{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    /*margin-bottom: 8px;*/
+    border-bottom-left-radius:  20px;
+    border-bottom-right-radius:  20px;
+}
+.buy-1{
+    
+    /*background-color: #16a836;*/
+    background-color: rgb(226, 207, 31);
+    background: rgb(239,189,8);
+   /* background-color: rgb(61, 81, 85);*/
+}
+
+.subtitulo{
+    /*border: 1px solid rgb(179, 179, 179);*/
+    padding-top: 70px;
+    text-align: center;
+    color: red;
+    font-size: 35px;
+}
+
+.workWithUs{
+    width: 450px;
+    margin: auto;
+    background-color: rgb(37, 129, 136);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    margin-bottom: 40px;
+}
+.workWithUs h2{
+    color: #fff;
+    text-align: center;
+    margin: 0%;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.workWithUs input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+.workWithUs textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+.workWithUs #boton{
+    background: #31384A;
+    color: #fff;
+    padding: 20px;
+}
+.workWithUs #boton:hover{
+    cursor: pointer;
+}
